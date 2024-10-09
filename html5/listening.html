@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/polaroid.css">
+<link rel="stylesheet" href="../css/listening.css">
+<link rel="stylesheet" href="../css/Botstrap 4.0/css/bootstrap.css">
+<script type="text/javascript" src="../javascript/listening.js"></script>
+
+</head>
+<body style="background-color: transparent;">
+
+<h2>Play this video and answer the questions accordingly</h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_dVnWxbYjYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div class="container">
+	
+	<div class="question">
+	<p>James wants to live with a homestay family so he can ____.</p>
+            <select id="q1">
+            	<option label="--Select one--"></option>
+                <option value="right" onclick="verify(1)">learn more of the language</option>
+                <option value="wrong" onclick="verify(1)">live close to school</option>
+                <option value="wrong" onclick="verify(1)">save money for college</option>
+            </select>
+</div>
+
+<div class="question">
+	<p>How many kids live with the homestay family?</p>
+            <select id="q2">
+            	<option label="--Select one--"></option>
+                <option value="wrong" onclick="verify(2)">11</option>
+                <option value="wrong" onclick="verify(2)">12</option>
+                <option value="right" onclick="verify(2)">13</option>
+            </select>
+</div>
+
+<div class="question">
+	<p>The family has some cats, dogs, a large snake, and a ______.</p>
+            <select id="q3">
+            	<option label="--Select one--"></option>
+                <option value="right" onclick="verify(3)">Rabbit</option>
+                <option value="wrong" onclick="verify(3)">Duck</option>
+                <option value="wrong" onclick="verify(3)">Donkey</option>
+            </select>
+</div>
+
+<div class="question">
+	<p>What is Randall's personallity when he's awake</p>
+            <select id="q4">
+            	<option label="--Select one--"></option>
+                <option value="wrong" onclick="verify(4)">He's organized and hardworking.</option>
+                <option value="right" onclick="verify(4)">He's outgoing and friendly.</option>
+                <option value="wrong" onclick="verify(4)">He's reliable and honest.</option>
+            </select>
+</div>
+
+<div class="question">
+	<p>Randall is asleep on the couch because he _____.</p>
+            <select id="q5">
+            	<option label="--Select one--"></option>
+                <option value="wrong" onclick="verify(5)">studied all night</option>
+                <option value="wrong" onclick="verify(5)">works very late at night</option>
+                <option value="right" onclick="verify(5)">played video games all night</option>
+            </select>
+</div>
+
+
+</div>
+
+<audio id="audioRight">
+  <source src="../audios/Doorbell.mp3" type="audio/mp3">
+</audio>
+
+<audio id="audioSolve">
+  <source src="../audios/solve.mp3" type="audio/mp3">
+</audio>
+
+<audio id="audioWrong">
+  <source src="../audios/horn.mp3" type="audio/mp3">
+</audio>
+
+</body>
+</html>

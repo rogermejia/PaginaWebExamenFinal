@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/polaroid.css">
+<link rel="stylesheet" href="../css/Botstrap 4.0/css/bootstrap.css">
+<script type="text/javascript" src="../javascript/writing.js"></script>
+
+</head>
+<body style="background-color: transparent;">
+
+<h2>Complete as the example</h2>
+
+<div class="polaroid">
+  <img src="../imagenes/running.jpg" alt="running"> 
+  <div class="container">
+    <input type="text" value="They are running" class="example" id="q1" style="background-color: white">
+    <p hidden="true" id="a1">They are running</p>
+  </div> 
+</div>
+
+<div class="polaroid">
+  <img src="../imagenes/eating.jpg" alt="eating"> 
+  <div class="container">
+    <input type="text" name="" value="" id="q2" style="background-color: white">
+    <p hidden="true" id="a2">She is eating</p>
+  </div> 
+</div>
+
+<div class="polaroid">
+  <img src="../imagenes/drinking.jpg" alt="drinking">
+    <div class="container">
+      <input type="text" name="" value="" id="q3" style="background-color: white">
+    <p hidden="true" id="a3">He is drinking</p>
+    </div>
+</div>
+
+<div class="polaroid">
+  <img src="../imagenes/swimming.jpeg" alt="swimming">
+    <div class="container">
+      <input type="text" name="" value="" id="q4" style="background-color: white">
+    <p hidden="true" id="a4">He is swimming</p>
+    </div>
+</div>
+
+<div class="polaroid">
+  <img src="../imagenes/reading.jpg" alt="reading">
+    <div class="container">
+      <input type="text" name="" value="" id="q5" style="background-color: white">
+    <p hidden="true" id="a5">She is reading</p>
+    </div>
+</div>
+
+<div class="polaroid">
+  <img src="../imagenes/walking.jpg" alt="walking">
+    <div class="container">
+     <input type="text" name="" value="" id="q6" style="background-color: white">
+    <p hidden="true" id="a6">They are walking</p>
+    </div>
+</div>
+<div style="clear: both;"></div>
+<button type="" class="btn btn-success" id="verify" style="float: right; vertical-align: baseline; margin-top: 0px; font-weight: bolder; padding: 10px 20px;" onclick="verify()">Check</button>
+<button type="" class="btn btn-warning" id="solve" style="float: right; vertical-align: baseline; margin-top: 0px; font-weight: bolder; padding: 10px 20px; display: none" onclick="solve()" >Solve</button>
+
+<audio id="audioRight">
+  <source src="../audios/Doorbell.mp3" type="audio/mp3">
+</audio>
+
+<audio id="audioSolve">
+  <source src="../audios/solve.mp3" type="audio/mp3">
+</audio>
+
+<audio id="audioWrong">
+  <source src="../audios/horn.mp3" type="audio/mp3">
+</audio>
+
+</body>
+</html>

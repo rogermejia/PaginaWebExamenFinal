@@ -1,0 +1,92 @@
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  height: 80px;
+  text-align: left;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #98fb98;
+  text-align: right;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  max-height: 60px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+
+.text{
+  margin: 0px;
+  width: 76%;
+  display: block;
+  margin: 0 auto;
+}
+
+input[type=text], select {
+  width: 90%; 
+  height: 33px;
+  padding: 0px 20px;
+  margin: 8px 0;
+  font-size: 20px;
+  text-align: center;
+  display: inline-block;
+  border-color: transparent;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color:darkgray;
+}
+
+input[type=button], select{
+  width: 10%;
+  height: 33px;
+  display: inline-block;
+  float: right;
+  margin: 8px 0;
+  background-image: url("../imagenes/mic.png");
+  background-size: 80% 100%;
+  background-position: center;
+  border: solid 1px Gainsboro;
+  border-radius: 50%;
+}
+
+.red{
+  background-color: red;
+}
+
+.green{
+  background-color: green;
+}
+
+.hidden{
+  display: none !important;
+}

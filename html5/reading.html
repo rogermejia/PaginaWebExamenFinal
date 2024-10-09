@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/polaroid.css">
+<link rel="stylesheet" href="../css/listening.css">
+<link rel="stylesheet" href="../css/Botstrap 4.0/css/bootstrap.css">
+<script type="text/javascript" src="../javascript/JQuery.js"></script>
+<script type="text/javascript" src="../javascript/listening.js"></script>
+
+</head>
+<body style="background-color: transparent;" onload="hideStory()">
+
+<h2>Read this story and answer those questions below</h2>
+
+
+    <span class="readTitle">A great summer vacation</span>
+<div class="louvre" onclick="hideStory()"></div>
+<div class="partialStory" onclick="showStory()">
+<p class="reading">
+    I just returned from the greatest summer vacation! It was... <span class="more">Read more</span>
+</p>
+</div>
+
+
+<div class="fullStory" onclick="hideStory()">
+<p class="reading">
+    I just returned from the greatest summer vacation! It was so fantastic, I never wanted it to end. I spent eight days in Paris, France. My best friends, Henry and Steve, went with me. We had a beautiful hotel room in the Latin Quarter, and it wasn't even expensive. We had a balcony with a wonderful view.
+</p>
+
+<p class="reading">
+    We visited many famous tourist places. My favorite was the Louvre, a well-known museum. I was always interested in art, so that was a special treat for me. The museum is so huge, you could spend weeks there. Henry got tired walking around the museum and said "Enough! I need to take a break and rest."
+</p>
+
+<p class="reading">
+    We took lots of breaks and sat in cafes along the river Seine. The French food we ate was delicious. The wines were tasty, too. Steve's favorite part of the vacation was the hotel breakfast. He said he would be happy if he could eat croissants like those forever. We had so much fun that we're already talking about our next vacation!
+</p>
+</div>
+
+<div class="container">
+	
+	<div class="question">
+	<p>What city did they go to for their summer vacation?</p>
+            <select id="q1">
+            	<option label="--Select one--"></option>
+                <option value="wrong" onclick="verify(1)">Latin</option>
+                <option value="wrong" onclick="verify(1)">Louvre</option>
+                <option value="right" onclick="verify(1)">Paris</option>
+                <option value="wrong" onclick="verify(1)">Lyon</option>
+            </select>
+</div>
+
+<div class="question">
+	<p>How long was the summer vacation?</p>
+            <select id="q2">
+            	<option label="--Select one--"></option>
+                <option value="wrong" onclick="verify(2)">One week</option>
+                <option value="right" onclick="verify(2)">Eight days</option>
+                <option value="wrong" onclick="verify(2)">Two weeks</option>
+                <option value="wrong" onclick="verify(2)">Eight weeks</option>
+            </select>
+</div>
+
+<div class="question">
+	<p>What did their hotel room have?</p>
+            <select id="q3">
+            	<option label="--Select one--"></option>
+                <option value="wrong" onclick="verify(3)">A refrigerator</option>
+                <option value="wrong" onclick="verify(3)">A bottle of wine</option>
+                <option value="wrong" onclick="verify(3)">A view of the metro</option>
+                <option value="right" onclick="verify(3)">A balcony</option>
+            </select>
+</div>
+
+<div class="question">
+	<p>Who got tired walking in the Louvre museum?</p>
+            <select id="q4">
+            	<option label="--Select one--"></option>
+                <option value="wrong" onclick="verify(4)">Seine</option>
+                <option value="right" onclick="verify(4)">Henry</option>
+                <option value="wrong" onclick="verify(4)">Steve</option>
+                <option value="wrong" onclick="verify(4)">Harry</option>
+            </select>
+</div>
+
+<div class="question">
+	<p>What did Steve enjoy the most?</p>
+            <select id="q5">
+            	<option label="--Select one--"></option>
+                <option value="right" onclick="verify(5)">The hotel breakfast and the croissants</option>
+                <option value="wrong" onclick="verify(5)">The wine and the food</option>
+                <option value="wrong" onclick="verify(5)">The Latin Quarter and the balcony</option>
+                <option value="wrong" onclick="verify(5)">The cafes along the river Seine</option>
+            </select>
+</div>
+
+
+</div>
+
+<audio id="audioRight">
+  <source src="../audios/Doorbell.mp3" type="audio/mp3">
+</audio>
+
+<audio id="audioSolve">
+  <source src="../audios/solve.mp3" type="audio/mp3">
+</audio>
+
+<audio id="audioWrong">
+  <source src="../audios/horn.mp3" type="audio/mp3">
+</audio>
+
+</body>
+</html>

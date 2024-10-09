@@ -1,0 +1,80 @@
+.question{
+  display: inline-block;
+  width: 80%;
+  margin-bottom: 45px;
+}
+
+
+.readTitle{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  text-align: center;
+  display: block;
+  width: 80%;
+  margin: 15px auto 8px;
+}
+
+
+.reading{
+  font-size: 16px !important;
+  font-weight: lighter !important;
+  text-align: justify;
+  display: block;
+  width: 80%;
+  margin: 0px auto 18px auto;
+  color: black;
+}
+
+.more{
+  color: LightSlateGray;
+}
+
+.more:hover{
+  color: DarkGray;
+  cursor:pointer;
+}
+
+.louvre{
+  background-image: url("../imagenes/louvre.jpg");
+  background-position: 0px -150px; 
+  background-size: cover;
+  padding: 5px;
+  display: block;
+  height: 400px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.fullStory{
+  border: solid 1px LightCoral;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.partialStory{
+  border: solid 1px LightCoral;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+p{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  text-align: justify;
+}
+
+select{
+  width: 52%;
+  height: 40px;
+  font-size: 25px;
+  display: inline;
+  text-align: center;
+}
+
+iframe{
+  display: block;
+  margin: 10px auto 45px auto;
+  border-radius: 10px;
+}

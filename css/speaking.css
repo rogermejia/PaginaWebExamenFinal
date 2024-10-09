@@ -1,0 +1,27 @@
+input[type=text], select {
+  width: 80% !important; 
+  height: 33px;
+  padding: 0px 20px;
+  margin: 8px 0;
+  font-size: 20px;
+  text-align: center;
+  display: inline-block;
+  border-color: transparent;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color:FFFFFF;
+  background-color: white;
+}
+
+input[type=button], select{
+  width: 20% !important;
+  height: 33px;
+  display: inline-block;
+  float: right;
+  margin: 8px 0;
+  background-image: url("../imagenes/mic.png");
+  background-size: 80% 100%;
+  background-position: center;
+  border: solid 1px Gainsboro;
+  border-radius: 0px 4px 4px 0px;
+}

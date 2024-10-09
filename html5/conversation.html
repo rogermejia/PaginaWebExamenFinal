@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<link rel="stylesheet" href="../css/polaroid.css">
+<link rel="stylesheet" href="../css/conversation.css">
+<link rel="stylesheet" href="../css/Botstrap 4.0/css/bootstrap.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="../javascript/conversation.js"></script>
+
+</head>
+<body style="background-color: transparent;">
+
+<h2>Complete as the example</h2>
+
+
+
+
+<div style="display:block; width:100%;">
+    <div class="container">
+        <img src="../imagenes/waiter.jpg" alt="Avatar">
+        <p>Good morning, what would you like to order?</p>
+        <span class="time-right">11:00</span>
+    </div>
+
+    <div class="container darker">
+        <img src="../imagenes/avatar.jpg" alt="Avatar" class="right">
+        <p id="q1">I would like to order a hamburger</p>
+        <span class="time-left">11:01</span>
+    </div>
+
+    <div class="container hidden" id="cont2">
+        <img src="../imagenes/waiter.jpg" alt="Avatar">
+        <p>Sweet! anything to dink?</p>
+        <span class="time-right">11:02</span>
+    </div>
+
+    <div class="container darker hidden" id="dark2">
+        <img src="../imagenes/avatar.jpg" alt="Avatar" class="right">
+        <p id="q2">An orange juice please</p>
+        <span class="time-left">11:05</span>
+    </div>
+
+    <div class="container hidden" id="cont3">
+        <img src="../imagenes/waiter.jpg" alt="Avatar">
+        <p>Would you like anything else?</p>
+        <span class="time-right">11:02</span>
+    </div>
+
+    <div class="container darker hidden" id="dark3">
+        <img src="../imagenes/avatar.jpg" alt="Avatar" class="right">
+        <p>Maybe some French fries and extra cheese</p>
+        <p id="q3" hidden>maybe some french fries and extra cheese</p>
+        <span class="time-left">11:05</span>
+    </div>
+
+    <div class="container hidden" id="cont4">
+        <img src="../imagenes/waiter.jpg" alt="Avatar">
+        <p>Your order will be ready in five minutes</p>
+        <span class="time-right">11:06</span>
+    </div>
+
+    <div class="container darker hidden" id="dark4">
+        <img src="../imagenes/avatar.jpg" alt="Avatar" class="right">
+        <p>Nice, thank you</p>
+        <p id="q4" hidden>nice thank you</p>
+        <span class="time-left">11:06</span>
+    </div>
+
+    <div class="text">
+      <input type="text" value="Send voicenotes to the waiter..." class="input" readonly="true">
+      <input type="button" class="btn btn-light" id="b1" onclick="escucha()">
+    </div>
+
+</div>
+
+
+    
+
+
+
+
+
+
+<audio id="audioRight">
+  <source src="../audios/Doorbell.mp3" type="audio/mp3">
+</audio>
+
+<audio id="audioSolve">
+  <source src="../audios/solve.mp3" type="audio/mp3">
+</audio>
+
+<audio id="audioWrong">
+  <source src="../audios/horn.mp3" type="audio/mp3">
+</audio>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+body {
+  margin:25px;
+  background-color: transparent;
+}
+
+.container{
+  display: block;
+  position: relative;
+}
+
+div[class^="question"] {
+  display: block;
+  width: 100%;
+  /*border: solid 1px black;*/
+}
+
+div.polaroid {
+  width: 300px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px;
+  margin-left: 10px;
+  border-radius: 8px 8px 8px 8px;
+  padding: 0em 0em 0em 0em;
+  float: left;
+}
+
+div[class^="question"] table tbody tr td[class^="answ"]{
+  display: block;
+  background-color: HoneyDew;
+  padding: 5px;
+  margin: 5px auto;
+  border: solid 1px lightgrey;
+  border-radius: 6px;
+  width: 380px;
+}
+
+div[class^="question"] table thead tr th{
+  margin: 10px 0px;
+  display: inline-block;
+  text-align: center;
+}
+
+.right{
+  background-color: #5cb85c !important;
+}
+
+.wrong{
+  background-color: #d9534f !important;
+}
+
+.buttons{
+  display: block;
+  margin-top: 20px; 
+  position: absolute;
+  left: 50%;
+}

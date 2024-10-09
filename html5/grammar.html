@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/grammar.css">
+<link rel="stylesheet" href="../css/Botstrap 4.0/css/bootstrap.css">
+<script type="text/javascript" src="../javascript/JQuery.js"></script>
+<script type="text/javascript" src="../javascript/grammar.js" async></script>
+
+</head>
+<body style="background-color: transparent;" onload="init()">
+
+<h2>Complete the sentences with the correct form</h2>
+
+
+<div class="container">
+
+  <table>
+    <tr>
+      <td>
+        <div class="question1">
+          <table>
+            <thead>
+              <tr>
+                <th>
+                  Question 1
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Do you think it's ________ rain tomorrow?</td>
+              </tr>
+              <tr>
+                <td class="answ1" onclick="checkIt(0, 1)">going to</td>
+              </tr>
+              <tr>
+                <td class="answ2" onclick="checkIt(0, 2)">going</td>
+              </tr>
+              <tr>
+                <td class="answ3" onclick="checkIt(0, 3)">to</td>
+              </tr>
+              <tr>
+                <td class="answ4" onclick="checkIt(0, 4)">will</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+
+      <td>
+        <div class="question2">
+          <table >
+            <thead>
+              <tr>
+                <th>
+                  Question 2
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>I drink coffee ________</td>
+              </tr>
+              <tr>
+                <td class="answ1" onclick="checkIt(1, 1)">two times day</td>
+              </tr>
+              <tr>
+                <td class="answ2" onclick="checkIt(1, 2)">twice in day</td>
+              </tr>
+              <tr>
+                <td class="answ3" onclick="checkIt(1, 3)">two times for a day</td>
+              </tr>
+              <tr>
+                <td class="answ4" onclick="checkIt(1, 4)">twice a day</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+
+      <td>
+        <div class="question3">
+          <table >
+            <thead>
+              <tr>
+                <th>
+                  Question 3
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>If he ________ one minute later, he ________ the train</td>
+              </tr>
+              <tr>
+                <td class="answ1" onclick="checkIt(2, 1)">would arrive, would miss</td>
+              </tr>
+              <tr>
+                <td class="answ2" onclick="checkIt(2, 2)">arrived, would have missed</td>
+              </tr>
+              <tr>
+                <td class="answ3" onclick="checkIt(2, 3)">would have arrived, would have missed</td>
+              </tr>
+              <tr>
+                <td class="answ4" onclick="checkIt(2, 4)">had arrived, would have missed</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+
+      <td>
+        <div class="question4">
+          <table >
+            <thead>
+              <tr>
+                <th>
+                  Question 4
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>That smells good! What ________</td>
+              </tr>
+              <tr>
+                <td class="answ1" onclick="checkIt(3, 1)">are you cook?</td>
+              </tr>
+              <tr>
+                <td class="answ2" onclick="checkIt(3, 2)">are you cooking?</td>
+              </tr>
+              <tr>
+                <td class="answ3" onclick="checkIt(3, 3)">do you cook?</td>
+              </tr>
+              <tr>
+                <td class="answ4" onclick="checkIt(3, 4)">do you cooking?</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+
+      <td>
+        <div class="question5">
+          <table >
+            <thead>
+              <tr>
+                <th>
+                  Question 5
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>She ________ in a small house near the park</td>
+              </tr>
+              <tr>
+                <td class="answ1" onclick="checkIt(4, 1)">live</td>
+              </tr>
+              <tr>
+                <td class="answ2" onclick="checkIt(4, 2)">stays</td>
+              </tr>
+              <tr>
+                <td class="answ3" onclick="checkIt(4, 3)">living</td>
+              </tr>
+              <tr>
+                <td class="answ4" onclick="checkIt(4, 4)">lives</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+
+      <td>
+        <div class="question6">
+          <table >
+            <thead>
+              <tr>
+                <th>
+                  Question 6
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>It was the first time he ________ anything so spicy</td>
+              </tr>
+              <tr>
+                <td class="answ1" onclick="checkIt(5, 1)">had eaten</td>
+              </tr>
+              <tr>
+                <td class="answ2" onclick="checkIt(5, 2)">was eating</td>
+              </tr>
+              <tr>
+                <td class="answ3" onclick="checkIt(5, 3)">has eaten</td>
+              </tr>
+              <tr>
+                <td class="answ4" onclick="checkIt(5, 4)">had been eating</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+
+      <td>
+        <div class="question7">
+          <table >
+            <thead>
+              <tr>
+                <th>
+                  Question 7
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>How long have they ________ there?</td>
+              </tr>
+              <tr>
+                <td class="answ1" onclick="checkIt(6, 1)">waiting</td>
+              </tr>
+              <tr>
+                <td class="answ2" onclick="checkIt(6, 2)">waited</td>
+              </tr>
+              <tr>
+                <td class="answ3" onclick="checkIt(6, 3)">been waiting</td>
+              </tr>
+              <tr>
+                <td class="answ4" onclick="checkIt(6, 4)">been waited</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+
+      <td>
+        <div class="question8">
+          <table >
+            <thead>
+              <tr>
+                <th>
+                  Question 8
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>The film ________ by Quentin Tarantino</td>
+              </tr>
+              <tr>
+                <td class="answ1" onclick="checkIt(7, 1)">did directed</td>
+              </tr>
+              <tr>
+                <td class="answ2" onclick="checkIt(7, 2)">was directed</td>
+              </tr>
+              <tr>
+                <td class="answ3" onclick="checkIt(7, 3)">directed</td>
+              </tr>
+              <tr>
+                <td class="answ4" onclick="checkIt(7, 4)">was direct</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+
+      <td>
+        <div class="question9">
+          <table >
+            <thead>
+              <tr>
+                <th>
+                  Question 9
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>By next month I ________ all my exams, and I can relax!</td>
+              </tr>
+              <tr>
+                <td class="answ1" onclick="checkIt(8, 1)">will finish</td>
+              </tr>
+              <tr>
+                <td class="answ2" onclick="checkIt(8, 2)">will have been finishing</td>
+              </tr>
+              <tr>
+                <td class="answ3" onclick="checkIt(8, 3)">will have finished</td>
+              </tr>
+              <tr>
+                <td class="answ4" onclick="checkIt(8, 4)">will be finishing</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+
+      <td>
+        <div class="question10">
+          <table >
+            <thead>
+              <tr>
+                <th>
+                  Question 10
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Could you tell me ________?</td>
+              </tr>
+              <tr>
+                <td class="answ1" onclick="checkIt(9, 1)">is where the bus stop</td>
+              </tr>
+              <tr>
+                <td class="answ2" onclick="checkIt(9, 2)">where is the bus stop</td>
+              </tr>
+              <tr>
+                <td class="answ3" onclick="checkIt(9, 3)">the bus stop is where</td>
+              </tr>
+              <tr>
+                <td class="answ4" onclick="checkIt(9, 4)">where the bus stop is</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+
+    </tr>
+  </table>
+
+<div class="buttons">
+  <input type="button" name="" value="prev" disabled="true" id="fauxprev" class="btn btn-light">
+
+  <input type="button" name="" value="prev" onclick="movePrev()" id="prev" class="btn btn-light">
+  <input type="button" name="" value="next" onclick="moveNext()" id="next" class="btn btn-light">
+
+  <input type="button" name="" value="next" disabled="true" id="fauxnext" class="btn btn-light">
+</div>
+  
+</div>
+
+<!--
+<div style="clear: both;"></div>
+<button type="" class="btn btn-success" id="verify" style="float: right; vertical-align: baseline; margin-top: 0px; font-weight: bolder; padding: 10px 20px;" onclick="verify()">Check</button>
+<button type="" class="btn btn-warning" id="solve" style="float: right; vertical-align: baseline; margin-top: 0px; font-weight: bolder; padding: 10px 20px; display: none" onclick="solve()" >Solve</button>
+-->
+
+<audio id="audioRight">
+  <source src="../audios/Doorbell.mp3" type="audio/mp3">
+</audio>
+
+<audio id="audioSolve">
+  <source src="../audios/solve.mp3" type="audio/mp3">
+</audio>
+
+<audio id="audioWrong">
+  <source src="../audios/horn.mp3" type="audio/mp3">
+</audio>
+
+</body>
+</html>

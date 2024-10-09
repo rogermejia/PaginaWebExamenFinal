@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/speaking.css">
+<link rel="stylesheet" href="../css/polaroid.css">
+<link rel="stylesheet" href="../css/Botstrap 4.0/css/bootstrap.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="../javascript/speaking.js"></script>
+<!--<script type="text/javascript">
+  
+    function escucha(q){
+    console.log($("#a1").text());
+    //console.log(e.type);
+    console.log(q);
+  }
+</script>-->
+
+</head>
+<body style="background-color: transparent;">
+
+<h2>Activate the microphone and read those phrases out loud</h2>
+
+<div class="polaroid">
+  <img src="../imagenes/running.jpg" alt="running"> 
+  <div class="container" >
+    <input type="text" value="They are running" id="q1" readonly="true">
+    <input type="button" class="btn btn-light" id="b1" onclick="escucha('1')">
+    <p hidden="true" id="a1">They are running</p>
+  </div> 
+</div>
+
+<div class="polaroid">
+  <img src="../imagenes/eating.jpg" alt="eating"> 
+  <div class="container">
+    <input type="text" name="" value="" id="q2" readonly="true">
+    <input type="button" class="btn btn-light" id="b2" onclick="escucha('2')">
+    <p hidden="true" id="a2">She is eating</p>
+  </div> 
+</div>
+
+<div class="polaroid">
+  <img src="../imagenes/drinking.jpg" alt="drinking">
+    <div class="container">
+      <input type="text" name="" value="" id="q3">
+      <input type="button" class="btn btn-light" id="b3" onclick="escucha('3')">
+    <p hidden="true" id="a3">He is drinking</p>
+    </div>
+</div>
+
+<div class="polaroid">
+  <img src="../imagenes/swimming.jpeg" alt="swimming">
+    <div class="container">
+      <input type="text" name="" value="" id="q4">
+      <input type="button" class="btn btn-light" id="b4" onclick="escucha('4')">
+    <p hidden="true" id="a4">He is swimming</p>
+    </div>
+</div>
+
+<div class="polaroid">
+  <img src="../imagenes/reading.jpg" alt="reading">
+    <div class="container">
+      <input type="text" name="" value="" id="q5">
+      <input type="button" class="btn btn-light" id="b5" onclick="escucha('5')">
+    <p hidden="true" id="a5">She is reading</p>
+    </div>
+</div>
+
+<div class="polaroid">
+  <img src="../imagenes/walking.jpg" alt="walking">
+    <div class="container">
+     <input type="text" name="" value="" id="q6">
+     <input type="button" class="btn btn-light" id="b6" onclick="escucha('6')">
+    <p hidden="true" id="a6">They are walking</p>
+    </div>
+</div>
+<div style="clear: both;"></div>
+<button type="" class="btn btn-success" id="verify" style="float: right; vertical-align: baseline; margin-top: 0px; font-weight: bolder; padding: 10px 20px;" onclick="verify()">Check</button>
+<button type="" class="btn btn-warning" id="solve" style="float: right; vertical-align: baseline; margin-top: 0px; font-weight: bolder; padding: 10px 20px; display: none" onclick="solve()" >Solve</button>
+
+<audio id="audioRight">
+  <source src="../audios/Doorbell.mp3" type="audio/mp3">
+</audio>
+
+<audio id="audioSolve">
+  <source src="../audios/solve.mp3" type="audio/mp3">
+</audio>
+
+<audio id="audioWrong">
+  <source src="../audios/horn.mp3" type="audio/mp3">
+</audio>
+
+</body>
+</html>
